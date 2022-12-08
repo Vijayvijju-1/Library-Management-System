@@ -1,0 +1,198 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+a
+{
+	margin-top:1%;
+	text-decoration: none;
+}
+.sticky {
+	margin-top:0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+table {
+background: linear-gradient(90deg, rgba(145,161,224,1) 30%, rgba(91,156,215,1) 96%);  border: 1px solid #fff;
+  border-collapse: collapse; 
+  padding: 15px;
+  width: 97%;
+  margin:auto;
+  table-layout: fixed;
+	overflow: hidden;
+	box-shadow: 0 0 12px grey;
+	border:transparent;
+}
+
+table caption {
+  font-size: 3em;
+  margin: .5em 0 .75em;
+}
+th,
+td {
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+	font-weight:600;
+}
+table tr {
+ 
+  padding:17px 5px 5px 5px;
+}
+
+table td {
+ font-size:1.5em;
+  padding-top:12px;
+   padding-bottom:12px;
+    padding-left:5px;
+     padding-left:5px;
+  text-align: center;
+}
+
+table th {
+  font-size: 2em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding-top:15px;
+   padding-bottom:5px;
+   background-color: #55608f;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead tr{
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 2px;
+    position: absolute;
+    width: 1px;
+    background-color: #55608f;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/*Header Css*/
+* {box-sizing: border-box;}
+    
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #f1f3f6;
+    }
+    
+    .topnav a {
+      float:left;
+         background-image: linear-gradient(to right, #83a4d4 0%, #b6fbff  51%, #83a4d4  100%);
+            margin: 10px;
+            padding: 10px 25px;
+           text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            font-size:10px;
+    }
+    
+    .topnav a:hover {
+        background-position: right center;
+            color: #fff;
+            text-decoration: none;
+    }
+    
+    .topnav a.active {
+      background-color: #2196F3;
+      color: white;
+    }
+    
+    .topnav .search-container {
+      float: right;
+    }
+    
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 30px;
+      font-weight:30px;
+      border: none;
+    }
+    
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+      .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .topnav input[type=text] {
+        border: 1px solid #ccc;  
+      }
+      
+    }
+ 

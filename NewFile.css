@@ -1,0 +1,69 @@
+@charset "ISO-8859-1";
+.logo{
+	
+	padding-top:30px;
+}
+.logo-text{
+	
+position:absolute ;
+top:2px;
+left:80px;
+
+}
+
+.login{
+	
+	position:absolute ;
+    top:5px;
+    right:200px;
+	
+}
+.signup{
+	
+	position:absolute ;
+    top:5px;
+    right:70px;
+}
+#body{
+	background-image: url("homepage.jpg");
+	background-repeat: no-repeat;
+	background-size: 3000px 1000px;
+}
+table{
+	
+	text-align:center;
+	width:600px;
+	background-color:bisque;
+	
+}
+table,td,th{
+	border:2px solid red;
+	
+	border-collapse:collapse;
+	border-radius:5px;
+		height:50px;
+}
+.tabledata{
+	position: absolute;
+	left:25%;
+}
+.tab{
+	position: absolute;
+	left:30%;
+	top:10%;
+}
+.button{
+	background:rgb(240, 88, 88);
+	border:none;
+	color:white;
+	padding:15px 32px;
+	text-align: center;
+	text-decoration:none ;
+	display: inline-block;
+	font-size: 16px;
+	margin:4px 2px;
+	cursor:pointer;
+}
+.button:hover{
+	background:rgb(98, 82, 241);
+}
